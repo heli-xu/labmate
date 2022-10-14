@@ -13,21 +13,21 @@ knitr::opts_chunk$set(
 )
 ```
 
-# labNoGame
+# labmate
 
 <!-- badges: start -->
-[![R-CMD-check](https://github.com/heli-xu/labNoGame/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/heli-xu/labNoGame/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/heli-xu/labmate/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/heli-xu/labmate/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The name of labNoGame loosely means "lab numbers game" (or lab is no game?), which is basically some of the numbers we have to deal with a lot in a lab setting from measurements (usually repeated over and over). The goal of labNoGame is to help you work with data organizing and management, automating and hopefully speeding up some of the almost robotic processes.
+The goal of labmate is to help you work with data organizing and management in a lab setting, automating and hopefully speeding up some of the processes. Many assays and measurements run in the lab require the same data processing steps every time the experiments are repeated. As some of the experiments with complex designs generate quite cumbersome spreadsheets, processing and adding them to existing data (based on grouping information) could be very time consuming. I used a lot of these functions when I was working in the lab, and it saved me a lot of time, especially the day before lab meeting... 
 
 ## Installation
 
-You can install the development version of labNoGame from [GitHub](https://github.com/) with:
+You can install the development version of labmate from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("heli-xu/labNoGame")
+devtools::install_github("heli-xu/labmate")
 ```
 
 ## Example
@@ -35,7 +35,7 @@ devtools::install_github("heli-xu/labNoGame")
 This is a basic example which shows you how to use `group_mean` to summarise the means of the measurements for each group of samples.
 
 ```{r example}
-library(labNoGame)
+library(labmate)
 ## basic example code
 group_mean(PlantGrowth, group, weight) 
 ```
