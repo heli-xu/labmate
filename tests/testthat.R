@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/reference/test_package.html#special-files
 
 library(testthat)
-library(labNoGame)
+library(labmate)
 
-test_check("labNoGame")
+test_check("labmate")
