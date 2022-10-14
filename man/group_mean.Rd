@@ -2,8 +2,7 @@
 % Please edit documentation in R/group_mean.R
 \name{group_mean}
 \alias{group_mean}
-\title{Summarise mean value for each group
-Like summarise(), group_mean()creates a new data frame. It's a combination of grouping by one variable and caculating measurements in each group. It's also useful in calculating an average for technical repeats, such as immunohistochemitry quantification (where you have multiple measurements for one sample).}
+\title{Summarise mean value for each group}
 \usage{
 group_mean(data, var1, var2)
 }
@@ -18,7 +17,6 @@ group_mean(data, var1, var2)
 a tibble with the group names, sample size of each group, and means for each group.
 }
 \description{
-Summarise mean value for each group
 Like summarise(), group_mean()creates a new data frame. It's a combination of grouping by one variable and caculating measurements in each group. It's also useful in calculating an average for technical repeats, such as immunohistochemitry quantification (where you have multiple measurements for one sample).
 }
 \examples{
